@@ -1,0 +1,66 @@
+.box {
+    display: flex;
+    gap: 10px;
+}
+
+.header {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header img {
+    margin: 10px 30px;
+}
+
+.body {
+    display: flex;
+}
+
+.table-data {
+    width: 100%;
+    padding: 10px;
+}
+
+.nav {
+    width: 300px;
+    border-right: 1px solid #eeeeee;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+.nav input {
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.div-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.div-2 {
+    padding: 5px 10px 5px 0px;
+    margin-left: 30px;
+    border-left: 1px solid #bdbdbd;
+}
+
+.div-2 div {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.div-3 {
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-left: 1px solid #bdbdbd;
+    cursor: pointer;
+}
+
+.color {
+    background-color: rgb(132, 204, 253);
+    color: blue;
+}
