@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import './App.css';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
@@ -10,8 +10,6 @@ import { mkConfig, generateCsv, download } from 'export-to-csv';
 import Data from "./data.json";
 import Header from './Header';
 import Nav from './Nav';
-
-console.log(Data);
 
 function App() {
   const columns = useMemo(() => [
@@ -75,11 +73,11 @@ function App() {
     data: Data,
     enableRowSelection: true,
     renderTopToolbarCustomActions: ({ table }) => (
-      <Group position="apart" style={{ width: '100%' }}>
+      <Group position="apart" style={{ width: '100%', position: "absolute", display: "flex", justifyContent: "end", paddingRight: "20px" }}>
         <Button onClick={handleExportData}
           leftIcon={<IconDownload />}
-          variant="filled" color='#fff' style={{ color: "#e14bd2", display: "flex", alignItems: "center", gap: "10px", border: "1px solid #e14bd2" }}>
-          <IconDownload />Export Excel
+          variant="filled" color='#fff' style={{ color: "#bb4be1", display: "flex", alignItems: "center", gap: "10px", border: "1px solid #bb4be1", }}>
+          <IconDownload style={{ padding: "4px" }} />Export Excel
         </Button>
       </Group>
     )
