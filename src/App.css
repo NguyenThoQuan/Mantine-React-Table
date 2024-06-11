@@ -64,3 +64,11 @@
     background-color: rgb(132, 204, 253);
     color: blue;
 }
+
+.button {
+    background-color: #ffffff;
+    border: 1px solid #e14bd2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
